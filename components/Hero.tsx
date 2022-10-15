@@ -15,7 +15,7 @@ const Hero: FC<HeroProps> = () => {
             <div className={styles.heroArea}>
                 <div className={styles.heroTextArea}>
                     <h1 className={styles.heading}>
-                        Hi, I'm <span className={styles.logo}>Vincent</span>
+                        Hi, I&aposm <span className={styles.logo}>Vincent</span>
                     </h1>
                     <p>
                         I am a coder and a web editor for{' '}
@@ -27,10 +27,10 @@ const Hero: FC<HeroProps> = () => {
                         >
                             El Estoque
                         </a>
-                        . I am a fullstack web developer, if there's a website
-                        you need, hit me up! I am proficient in various frontend
-                        javascript frameworks and I am eager to learn. I am
-                        newly a web editor for El Estoque.
+                        . I am a fullstack web developer, if there&aposs a
+                        website you need, hit me up! I am proficient in various
+                        frontend javascript frameworks and I am eager to learn.
+                        I am newly a web editor for El Estoque.
                     </p>
                     <a
                         href="mailto:zhao.wentao.vincent@gmail.com"
