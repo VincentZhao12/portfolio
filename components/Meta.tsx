@@ -32,7 +32,7 @@ const Meta: FC<MetaProps> = ({ title, keywords, description, url, image }) => {
 };
 
 Meta.defaultProps = {
-    title: 'Monta Vista CSF',
+    title: 'Vincent Zhao',
 };
 
 export default Meta;

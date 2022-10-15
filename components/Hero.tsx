@@ -15,7 +15,6 @@ const Hero: FC<HeroProps> = () => {
             <div className={styles.heroArea}>
                 <div className={styles.heroTextArea}>
                     <h1 className={styles.heading}>
-                        {' '}
                         Hi, I'm <span className={styles.logo}>Vincent</span>
                     </h1>
                     <p>
