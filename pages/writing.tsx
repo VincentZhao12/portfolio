@@ -9,15 +9,37 @@ import React, { FC } from 'react';
 import { db } from '../config/firebase';
 import { Thing } from '../types';
 import styles from '../styles/writing.module.css';
+import Image from 'next/image';
+import Article from '../assets/Article.png';
 
 interface WritingProps {
     articles: Thing[];
 }
 
-const Writing: FC<WritingProps> = () => {
+const Writing: FC<WritingProps> = ({ articles }) => {
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Writing</h1>
+            {articles?.map((article) => (
+                <a
+                    href={article.link}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    title={article.title}
+                >
+                    <div>
+                        <Image
+                            src={article.image ?? Article}
+                            alt={article.title}
+                            width={100}
+                            height={100}
+                        />
+                        <h3>{article.title}</h3>
+                        <h4>{article.date}</h4>
+                        <p>{article.description}</p>
+                    </div>
+                </a>
+            ))}
         </div>
     );
 };
@@ -25,9 +47,12 @@ const Writing: FC<WritingProps> = () => {
 export default Writing;
 
 export const getServerSideProps = async () => {
-    const eventsCollection = query(collection(db, 'writing'), orderBy('date'));
+    const articlesCollection = query(
+        collection(db, 'writing'),
+        orderBy('date'),
+    );
 
-    const events = (await getDocs(eventsCollection)).docs.map((doc) => {
+    const articles = (await getDocs(articlesCollection)).docs.map((doc) => {
         const dateObj = (doc.data().date as Timestamp).toDate();
 
         return {
@@ -42,9 +67,10 @@ export const getServerSideProps = async () => {
         };
     });
 
+    console.log(articles);
     return {
         props: {
-            events,
+            articles,
         },
     };
 };
