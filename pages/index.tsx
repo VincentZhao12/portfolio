@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Hero from '../components/Hero';
-import InfoBlock from '../components/InfoBlock';
 import Meta from '../components/Meta';
 import styles from '../styles/Home.module.css';
 import Button from '../components/Button';
