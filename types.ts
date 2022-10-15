@@ -1,5 +1,5 @@
 export interface Thing {
-    date?: Date;
+    date?: string;
     description: string;
     image?: string;
     link: string;

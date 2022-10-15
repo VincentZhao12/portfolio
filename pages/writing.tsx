@@ -32,7 +32,13 @@ export const getServerSideProps = async () => {
 
         return {
             ...doc.data(),
-            date: dateObj.toJSON(),
+            date:
+                dateObj.getMonth() +
+                1 +
+                '/' +
+                dateObj.getUTCDate() +
+                '/' +
+                dateObj.getUTCFullYear(),
         };
     });
 
