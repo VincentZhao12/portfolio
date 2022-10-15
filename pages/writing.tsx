@@ -26,6 +26,7 @@ const Writing: FC<WritingProps> = ({ articles }) => {
                     target="_blank"
                     rel="noreferrer noopener"
                     title={article.title}
+                    key={article.title}
                 >
                     <div>
                         <Image
