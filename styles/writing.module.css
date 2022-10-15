@@ -1,0 +1,10 @@
+.container {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.title {
+    text-align: left;
+}

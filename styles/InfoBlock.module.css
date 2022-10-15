@@ -1,0 +1,92 @@
+.papa {
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 15rem;
+    padding: 1.5rem 1rem;
+    animation-play-state: paused;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+}
+
+.run {
+    animation-play-state: running;
+}
+
+.container > * {
+    margin-right: 5%;
+}
+
+.textArea {
+    width: 40%;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.heading {
+    font-size: 1.3rem;
+}
+
+.image {
+    width: 15rem;
+    border-radius: 100%;
+}
+
+.img {
+    border-radius: 100%;
+}
+
+.green {
+    background-color: var(--primary);
+    color: rgb(246, 241, 229);
+}
+
+.beige {
+    background-color: var(--beige);
+}
+
+.fuzzywuzzy {
+    background-color: var(--fuzzy-wuzzy);
+}
+
+.slideInLeftItem {
+    animation-name: slideinleft;
+    animation-duration: 0.75s;
+}
+
+.slideInRightItem {
+    animation-name: slideinright;
+    animation-duration: 0.75s;
+}
+
+@keyframes slideinleft {
+    from {
+        /* position: absolute; */
+        margin-left: 100vw;
+        opacity: 0;
+    }
+
+    to {
+        /* position: relative; */
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideinright {
+    from {
+        /* position: absolute; */
+        margin-right: 100vw;
+        opacity: 0;
+    }
+
+    to {
+        /* position: relative; */
+        margin-right: 0;
+        opacity: 1;
+    }
+}

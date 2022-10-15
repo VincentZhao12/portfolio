@@ -1,0 +1,130 @@
+.hero {
+    width: 100%;
+    margin: 0;
+    height: calc(100vh - 5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.button {
+    font-weight: 500;
+}
+
+.heroArea {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #fff 0%, 70vw, #662d9100 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.heroTextArea {
+    width: 40%;
+    margin-left: 20%;
+    font-size: 1rem;
+    animation-name: slideinleft;
+    animation-duration: 0.75s;
+}
+
+.heroTextArea > * {
+    margin-top: 1rem;
+}
+
+.heroImage {
+    position: absolute;
+    left: 60%;
+    width: 12%;
+    z-index: -1;
+    top: calc(((100vh) - 0.2 * 100vw * 700 / 393) / 2 + 5rem);
+    overflow: hidden;
+}
+
+.imageContainer {
+    height: calc(100vh);
+    animation-name: slideinright;
+    animation-duration: 0.75s;
+    animation-delay: 0.15s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.heading {
+    font-size: 2rem;
+}
+
+.logo {
+    color: var(--fifth);
+    font-family: Adreena Script;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+@media (max-width: 950px) {
+    .heroImage {
+        position: absolute;
+        /* left: 20%; */
+        width: 60%;
+        z-index: -1;
+        overflow: hidden;
+        top: calc(((100vh - 5rem) - 0.6 * 100vh) / 2);
+
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .imageContainer {
+        animation-name: slideintop;
+        animation-duration: 0.75s;
+        animation-delay: 0.15s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+}
+
+@keyframes slideinleft {
+    from {
+        position: absolute;
+        left: 100vw;
+        opacity: 0;
+    }
+
+    to {
+        position: relative;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideinright {
+    from {
+        position: absolute;
+        right: 100vw;
+        opacity: 1;
+    }
+
+    to {
+        position: relative;
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideintop {
+    from {
+        position: absolute;
+        top: 100vh;
+        opacity: 0;
+    }
+
+    to {
+        position: relative;
+        top: 0;
+        opacity: 1;
+    }
+}

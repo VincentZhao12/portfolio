@@ -1,0 +1,79 @@
+.button {
+    background-color: #f7f7f7;
+    border: none;
+    color: black;
+    padding: 0.75rem 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 100;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.button:hover {
+    filter: brightness(85%);
+}
+
+.primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.secondary {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.tertiary {
+    background-color: var(--tertiary);
+    color: white;
+}
+
+.fourth {
+    background-color: var(--fourth);
+    color: white;
+}
+.fifth {
+    background-color: var(--fifth);
+    color: white;
+}
+
+.primary-outline {
+    border-color: var(--primary);
+    color: var(--primary);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.secondary-outline {
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.tertiary-outline {
+    border-color: var(--tertiary);
+    color: var(--tertiary);
+}
+
+.fourth-outline {
+    border-color: var(--fourth);
+    color: var(--fourth);
+}
+.fifth-outline {
+    border-color: var(--fifth);
+    color: var(--fifth);
+}
+
+.button:disabled {
+    filter: grayscale(100%);
+    cursor: not-allowed;
+}
