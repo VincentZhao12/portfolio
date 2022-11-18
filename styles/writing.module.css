@@ -1,8 +1,28 @@
 .container {
-    justify-self: center;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    width: 80%;
+}
+.grid {
+    justify-self: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.story {
+    height: 375px;
+    overflow-y: hidden;
+}
+
+.storyImage {
+    height: 20vh;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.grid > * {
+    margin: 1rem;
 }
 
 .title {
