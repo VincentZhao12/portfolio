@@ -11,9 +11,7 @@ const Home: NextPage = () => {
     return (
         <div>
             <Meta title="Vincent Zhao" />
-            <main>
-                <Hero />
-            </main>
+            <Hero />
         </div>
     );
 };

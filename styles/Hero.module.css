@@ -1,11 +1,15 @@
 .hero {
-    width: 100%;
+    width: 100vw;
     margin: 0;
     height: calc(100vh - 5rem);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+.hero::after {
+    width: 100px;
 }
 
 .button {
@@ -15,7 +19,12 @@
 .heroArea {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, #fff 0%, 70vw, #662d9100 100%);
+    background-image: linear-gradient(
+        to right,
+        #fff 0%,
+        70vw,
+        rgba(255, 255, 255, 0) 100%
+    );
     display: flex;
     justify-content: center;
     flex-direction: column;
