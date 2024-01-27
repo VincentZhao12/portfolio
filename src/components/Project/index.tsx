@@ -52,8 +52,8 @@ const Project: FC<ProjectProps> = ({
                             src={image}
                             alt={name}
                             className={styles.image}
-                            width={100}
-                            height={100}
+                            width={700}
+                            height={700}
                         />
                     </div>
                 )}

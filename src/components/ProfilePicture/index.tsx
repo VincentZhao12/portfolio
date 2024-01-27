@@ -12,8 +12,8 @@ const ProfilePicture: FC<ProfilePictureProps> = () => {
                 src={'/images/profile.jpg'}
                 alt={'pfp'}
                 className={styles.image}
-                width={250}
-                height={250}
+                width={1000}
+                height={1000}
             />
         </div>
     );
