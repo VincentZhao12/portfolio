@@ -8,6 +8,7 @@ const ProfilePicture: FC<ProfilePictureProps> = () => {
     return (
         <div className={styles.circularProfilePicture}>
             <Image
+                priority
                 src={'/images/profile.jpg'}
                 alt={'pfp'}
                 className={styles.image}

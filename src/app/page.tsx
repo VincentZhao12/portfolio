@@ -30,25 +30,24 @@ const Home = () => {
                 {/*overall container*/}
                 <div className={styles.sidebar}>
                     <div className={styles.vstack}>
-                        <ScrollButton scrollRef={aboutRef?.current}>
+                        <ScrollButton scrollRef={aboutRef}>
                             about me
                         </ScrollButton>
-                        <ScrollButton scrollRef={expRef?.current}>
+                        <ScrollButton scrollRef={expRef}>
                             my experience
                         </ScrollButton>
-                        <ScrollButton scrollRef={skillsRef?.current}>
+                        <ScrollButton scrollRef={skillsRef}>
                             my skills
                         </ScrollButton>
-                        <ScrollButton scrollRef={projRef?.current}>
+                        <ScrollButton scrollRef={projRef}>
                             my projects
                         </ScrollButton>
-                        <ScrollButton scrollRef={contactRef?.current}>
+                        <ScrollButton scrollRef={contactRef}>
                             contact me
                         </ScrollButton>
                     </div>
                 </div>
                 <div className={`${styles.content}`}>
-                    {/*main content area*/}
                     <div className={styles.aboutme} ref={aboutRef}>
                         <ProfilePicture />
                         <h1>{'\u{1F44B}'} Hi, I'm Vincent Zhao</h1>
@@ -307,7 +306,7 @@ const Home = () => {
                             ]}
                         />
                     </div>
-                    <div className={styles.footer}>
+                    <div className={styles.footer} ref={contactRef}>
                         <div className={styles.contact}>
                             <a
                                 href="zhao1322@purdue.edu"

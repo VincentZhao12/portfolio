@@ -1,8 +1,9 @@
-import React, { FC, ReactNode } from 'react';
+'use client';
+import React, { FC, ReactNode, RefObject } from 'react';
 import styles from './ScrollButton.module.css';
 
 interface ScrollButtonProps {
-    scrollRef?: HTMLDivElement | null;
+    scrollRef?: RefObject<HTMLDivElement> | null;
     children: ReactNode;
 }
 
@@ -10,7 +11,10 @@ const ScrollButton: FC<ScrollButtonProps> = ({ scrollRef, children }) => {
     return (
         <a
             className={styles.button}
-            onClick={() => scrollRef?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => {
+                scrollRef?.current?.scrollIntoView({ behavior: 'smooth' });
+                console.log('kljsadlf');
+            }}
         >
             {children}
         </a>
