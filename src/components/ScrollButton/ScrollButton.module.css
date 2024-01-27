@@ -1,0 +1,11 @@
+/* .button :hover {
+    cursor: zoom-in;
+} */
+
+.button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}

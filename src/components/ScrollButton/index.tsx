@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from 'react';
+import styles from './ScrollButton.module.css';
 
 interface ScrollButtonProps {
     scrollRef?: HTMLDivElement | null;
@@ -7,11 +8,12 @@ interface ScrollButtonProps {
 
 const ScrollButton: FC<ScrollButtonProps> = ({ scrollRef, children }) => {
     return (
-        <button
+        <a
+            className={styles.button}
             onClick={() => scrollRef?.scrollIntoView({ behavior: 'smooth' })}
         >
             {children}
-        </button>
+        </a>
     );
 };
 

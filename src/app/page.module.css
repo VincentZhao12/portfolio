@@ -4,6 +4,10 @@
     flex-direction: column;
 }
 
+.vstack > * {
+    margin-bottom: 1rem;
+}
+
 .sidebar {
     height: 100%;
     width: 10rem;
@@ -12,6 +16,10 @@
     top: 0;
     left: 0;
     overflow-x: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
@@ -19,10 +27,51 @@
 }
 
 .content > * {
-    margin-bottom: 25rem;
+    margin-bottom: 5rem;
+    width: calc(100vw - 11rem);
 }
 
 .hstack {
     display: flex;
     flex-direction: row;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+    .content > * {
+        width: calc(100vw - 6rem);
+    }
+    .content {
+        margin-left: 3rem;
+    }
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.iconLink {
+    color: #495057;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }

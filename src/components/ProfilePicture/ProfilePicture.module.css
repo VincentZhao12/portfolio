@@ -1,0 +1,13 @@
+.circularProfilePicture {
+    width: 250px; /* Set your desired width */
+    height: 250px; /* Set your desired height */
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire circular container */
+    border-radius: 50%; /* Ensure the image itself is also circular */
+}

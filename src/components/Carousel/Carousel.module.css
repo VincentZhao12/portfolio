@@ -1,0 +1,28 @@
+/* components/Carousel.module.css */
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carouselContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+}
+
+.carouselItem {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-right: 16px; /* Adjust the spacing between items as needed */
+    height: 100%;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 767px) {
+    .carouselItem {
+        width: calc(100% - 16px); /* Full width on small screens with margin */
+        margin-right: 0;
+    }
+}
