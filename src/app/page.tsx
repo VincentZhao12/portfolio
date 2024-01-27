@@ -14,9 +14,10 @@ import {
     FaHtml5,
     FaJava,
     FaLinkedin,
+    FaPython,
     FaReact,
 } from 'react-icons/fa';
-import { SiFirebase, SiSpotify, SiTensorflow } from 'react-icons/si';
+import { SiFirebase, SiOpencv, SiSpotify, SiTensorflow } from 'react-icons/si';
 
 const Home = () => {
     const aboutRef = useRef<HTMLDivElement>(null);
@@ -209,6 +210,7 @@ const Home = () => {
                                             name: 'Tensorflow',
                                             icon: <SiTensorflow />,
                                         },
+                                        { name: 'Python', icon: <FaPython /> },
                                     ]}
                                 />,
                                 <Project
@@ -233,6 +235,7 @@ const Home = () => {
                                             name: 'Spotify API',
                                             icon: <SiSpotify />,
                                         },
+                                        { name: 'Python', icon: <FaPython /> },
                                     ]}
                                 />,
                                 <Project
@@ -243,6 +246,11 @@ const Home = () => {
                                     Divisonal Semifinalist Robot"
                                     skills={[
                                         { name: 'Java', icon: <FaJava /> },
+                                        {
+                                            name: 'Computer Vision',
+                                            icon: <SiOpencv />,
+                                        },
+                                        { name: 'Control Theory', icon: '⚙️' },
                                     ]}
                                 />,
                                 <Project
@@ -285,6 +293,11 @@ const Home = () => {
                                     Qualifying Robot"
                                     skills={[
                                         { name: 'Java', icon: <FaJava /> },
+                                        {
+                                            name: 'Computer Vision',
+                                            icon: <SiOpencv />,
+                                        },
+                                        { name: 'Control Theory', icon: '⚙️' },
                                     ]}
                                 />,
                                 <Project
