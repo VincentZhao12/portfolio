@@ -35,3 +35,12 @@
     display: inline;
     margin: 1rem;
 }
+
+@media (max-width: 600px) {
+    .pane {
+        width: 70vw;
+    }
+    .squareImage {
+        width: 90%;
+    }
+}
