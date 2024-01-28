@@ -44,6 +44,11 @@
     align-items: center;
 }
 
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
 @media (max-width: 600px) {
     .sidebar {
         display: none;

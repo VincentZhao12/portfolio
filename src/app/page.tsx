@@ -46,6 +46,12 @@ const Home = () => {
                         <ScrollButton scrollRef={contactRef}>
                             contact me
                         </ScrollButton>
+                        <a
+                            className={styles.link}
+                            href="/vincent_zhao_resume.pdf"
+                        >
+                            resume
+                        </a>
                     </div>
                 </div>
                 <div className={`${styles.content}`}>
