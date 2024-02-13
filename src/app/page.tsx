@@ -18,6 +18,8 @@ import {
     FaReact,
 } from 'react-icons/fa';
 import { SiFirebase, SiOpencv, SiSpotify, SiTensorflow } from 'react-icons/si';
+import { LuSoup } from 'react-icons/lu';
+import { TbTransform } from 'react-icons/tb';
 
 const Home = () => {
     const aboutRef = useRef<HTMLDivElement>(null);
@@ -199,6 +201,23 @@ const Home = () => {
                         <Carousel
                             items={[
                                 <Project
+                                    name="NY Times Crossed"
+                                    image="/images/crossed.png"
+                                    github="https://github.com/VincentZhao12/nyt-crossed"
+                                    desc="Solver for NY Times mini games (Wordle/Connections/Mini)"
+                                    skills={[
+                                        { name: 'Python', icon: <FaPython /> },
+                                        {
+                                            name: 'Beautiful Soup',
+                                            icon: <LuSoup />,
+                                        },
+                                        {
+                                            name: 'Word Embeddings',
+                                            icon: <TbTransform />,
+                                        },
+                                    ]}
+                                />,
+                                <Project
                                     name="Monkey King Scavenger Hunt"
                                     image="/images/mk.png"
                                     github="https://github.com/VincentZhao12/monkey-king-scavenger-hunt"
@@ -206,7 +225,6 @@ const Home = () => {
                                     desc="ML scavenger hunt game for SCLA Creative Project"
                                     skills={[
                                         { name: 'TypeScript', icon: '📄' },
-                                        { name: 'React Native', icon: '📱' },
                                         {
                                             name: 'Firebase',
                                             icon: <SiFirebase />,
@@ -227,7 +245,6 @@ const Home = () => {
                                     desc="ML Spotify API Hackathon Project"
                                     skills={[
                                         { name: 'TypeScript', icon: '📄' },
-                                        { name: 'React Native', icon: '📱' },
                                         {
                                             name: 'Firebase',
                                             icon: <SiFirebase />,
