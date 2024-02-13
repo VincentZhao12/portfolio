@@ -2,9 +2,10 @@
     width: 22rem;
     height: 22rem;
     overflow: hidden;
-    border-radius: 1rem;
+    border-radius: 0.5em;
     border-style: solid;
-    border-width: 0.25rem;
+    border-width: 0.1rem;
+    margin-top: 0.75em;
 }
 
 .skills {
@@ -46,7 +47,7 @@
 
 .pane {
     border-style: solid;
-    border-color: rgb(211, 211, 211);
+    border-color: rgb(78, 78, 79);
     border-width: 0.075rem;
     padding: 1rem 0.5rem 1rem 0.5rem;
     width: 25rem;
@@ -56,7 +57,7 @@
     align-items: center;
     border-radius: 1rem;
     /* background-color: rgb(215, 215, 215); */
-    /* height: 29rem; */
+    height: 38rem;
 }
 
 .desc {

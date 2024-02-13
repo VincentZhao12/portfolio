@@ -59,10 +59,15 @@ const Home = () => {
                 <div className={`${styles.content}`}>
                     <div className={styles.aboutme} ref={aboutRef}>
                         <ProfilePicture />
-                        <h1>{'\u{1F44B}'} Hi, I'm Vincent Zhao</h1>
+                        <h1>
+                            {'\u{1F44B}'} Hi, I'm <span>Vincent Zhao</span>
+                        </h1>
                         <p>
                             I'm a Computer Science Student at{' '}
-                            <a href="https://www.cs.purdue.edu/" about="_blank">
+                            <a
+                                href="https://www.cs.purdue.edu/"
+                                target="_blank"
+                            >
                                 Purdue University
                             </a>
                             .
@@ -215,6 +220,14 @@ const Home = () => {
                                             name: 'Word Embeddings',
                                             icon: <TbTransform />,
                                         },
+                                        {
+                                            name: 'pandas',
+                                            icon: '🐼',
+                                        },
+                                        {
+                                            name: 'numpy',
+                                            icon: '🧮',
+                                        },
                                     ]}
                                 />,
                                 <Project
@@ -225,10 +238,6 @@ const Home = () => {
                                     desc="ML scavenger hunt game for SCLA Creative Project"
                                     skills={[
                                         { name: 'TypeScript', icon: '📄' },
-                                        {
-                                            name: 'Firebase',
-                                            icon: <SiFirebase />,
-                                        },
                                         { name: 'ReactJS', icon: <FaReact /> },
                                         {
                                             name: 'Tensorflow',
@@ -342,32 +351,29 @@ const Home = () => {
                             ]}
                         />
                     </div>
-                    <div className={styles.footer} ref={contactRef}>
-                        <div className={styles.contact}>
-                            <a
-                                href="zhao1322@purdue.edu"
-                                className={styles.iconLink}
-                            >
-                                <FaEnvelope /> Email
-                            </a>
-                            <a
-                                href="https://github.com/VincentZhao12"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={styles.iconLink}
-                            >
-                                <FaGithub /> GitHub
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/in/vincent-zhao-aa3357267/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={styles.iconLink}
-                            >
-                                <FaLinkedin /> LinkedIn
-                            </a>
-                        </div>
-                    </div>
+                </div>
+            </div>
+            <div className={styles.footer} ref={contactRef}>
+                <div className={styles.contact}>
+                    <a href="zhao1322@purdue.edu" className={styles.iconLink}>
+                        <FaEnvelope /> Email
+                    </a>
+                    <a
+                        href="https://github.com/VincentZhao12"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.iconLink}
+                    >
+                        <FaGithub /> GitHub
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/vincent-zhao-aa3357267/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.iconLink}
+                    >
+                        <FaLinkedin /> LinkedIn
+                    </a>
                 </div>
             </div>
         </main>

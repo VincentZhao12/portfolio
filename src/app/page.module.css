@@ -31,6 +31,10 @@
     width: calc(100vw - 11rem);
 }
 
+.primary_color {
+    color: #eb4511;
+}
+
 .hstack {
     display: flex;
     flex-direction: row;
@@ -62,7 +66,7 @@
     }
 }
 .footer {
-    background-color: #f8f9fa;
+    background-color: #433e58;
     padding: 20px;
     text-align: center;
     width: 100%;
@@ -76,7 +80,7 @@
 }
 
 .iconLink {
-    color: #495057;
+    color: #a09bb0;
     text-decoration: none;
     display: flex;
     align-items: center;

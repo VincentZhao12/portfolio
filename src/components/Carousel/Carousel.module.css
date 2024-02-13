@@ -3,6 +3,7 @@
 .carousel {
     width: 100%;
     overflow: hidden;
+    margin: 1em 0;
 }
 
 .carouselContainer {
@@ -15,7 +16,7 @@
 .carouselItem {
     flex: 0 0 auto;
     scroll-snap-align: start;
-    margin-right: 16px; /* Adjust the spacing between items as needed */
+    margin-right: 1.5em; /* Adjust the spacing between items as needed */
     height: 100%;
 }
 
