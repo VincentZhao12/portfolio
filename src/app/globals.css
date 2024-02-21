@@ -1,7 +1,7 @@
 :root {
     --primary: #eb4511;
-    background-color: #23202e;
-    color: #a09bb0;
+    /* background-color: black;
+    color: #a09bb0; */
     font-family: __inter_20b187, __inter_Fallback_20b187, ui-sans-serif,
         system-ui, -apple-system, 'system-ui', 'Segoe UI', Roboto,
         'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
@@ -13,11 +13,11 @@ h1,
 h2,
 h3,
 h4 {
-    color: rgb(206, 198, 212);
+    /* color: rgb(206, 198, 212); */
 }
 
 a {
-    color: #7559cf;
+    /* color: #7559cf; */
 }
 
 * {

@@ -41,7 +41,7 @@
 }
 
 .aboutme {
-    margin-top: 4rem;
+    /* margin-top: 4rem */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,7 +66,7 @@
     }
 }
 .footer {
-    background-color: #433e58;
+    background-color: aliceblue;
     padding: 20px;
     text-align: center;
     width: 100%;
@@ -80,8 +80,13 @@
 }
 
 .iconLink {
-    color: #a09bb0;
+    /* color: #858585; */
+    color: black;
     text-decoration: none;
     display: flex;
     align-items: center;
+}
+
+.content > * {
+    height: 100vh;
 }

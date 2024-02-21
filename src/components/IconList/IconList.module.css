@@ -4,10 +4,15 @@
     flex-wrap: wrap;
 }
 
+.center {
+    justify-content: center;
+}
+
 .skillItem {
     display: flex;
     align-items: center;
-    background-color: #433e58;
+    /* background-color: #433e58; */
+    background-color: aliceblue;
     padding: 8px;
     border-radius: 8px;
     margin-right: 8px;

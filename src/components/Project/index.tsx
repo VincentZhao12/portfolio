@@ -61,7 +61,7 @@ const Project: FC<ProjectProps> = ({
             <span className={styles.desc}>{desc}</span>
             {skills && (
                 <div className={styles.skills}>
-                    <IconList list={skills} />
+                    <IconList list={skills} center={true} />
                 </div>
             )}
         </div>

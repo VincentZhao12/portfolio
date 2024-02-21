@@ -67,6 +67,7 @@ const Home = () => {
                             <a
                                 href="https://www.cs.purdue.edu/"
                                 target="_blank"
+                                rel="noopener"
                             >
                                 Purdue University
                             </a>

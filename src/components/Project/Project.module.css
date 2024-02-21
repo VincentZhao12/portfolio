@@ -1,11 +1,11 @@
 .squareImage {
-    width: 22rem;
-    height: 22rem;
+    width: 23rem;
+    height: 20rem;
     overflow: hidden;
-    border-radius: 0.5em;
+    /* border-radius: 0.5em;
     border-style: solid;
-    border-width: 0.1rem;
-    margin-top: 0.75em;
+    border-width: 0.1rem; */
+    margin-top: 0;
 }
 
 .skills {
@@ -55,7 +55,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
     /* background-color: rgb(215, 215, 215); */
     height: 38rem;
 }
