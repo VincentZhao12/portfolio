@@ -83,24 +83,59 @@ const Home = () => {
                         <Carousel
                             items={[
                                 <Experience
+                                    name="Office of Indiana State Chemist"
+                                    role="Software Engineer"
+                                    image="/images/oisc.jpeg"
+                                >
+                                    <ul>
+                                        <li>
+                                            Implemented forms used by over 300
+                                            inspection agents to collect data on
+                                            pesticides, feeds, and other similar
+                                            products.
+                                        </li>
+                                        <li>
+                                            Redesigned barcode input to handle
+                                            EAN-8, UPC-E, and EAN-13 codes
+                                            rather than just UPC-A
+                                        </li>
+                                        <li>
+                                            Developed custom media viewer that
+                                            handles audio, video, image, and
+                                            documents with rotation and
+                                            magnification features
+                                        </li>
+                                        <li>
+                                            Wrote file server app for converting
+                                            files from HEIC, and other image
+                                            formats to JPG and for interview
+                                            transcription
+                                        </li>
+                                    </ul>
+                                </Experience>,
+                                <Experience
                                     name="Purdue Data Mine Space Biology Research"
                                     role="Researcher"
                                     image="/images/datamine.png"
                                 >
                                     <ul>
                                         <li>
-                                            Worked under Dr. Marshall
-                                            Porterfield in using computational
-                                            approaches to analyzing NASA's Space
-                                            Biology datasets to understand the
-                                            effects of microgravity on plants'
-                                            photorespiration
+                                            Analyzed microarray data for over
+                                            25k genes for evidence of
+                                            photorespiration in spaceflight vs
+                                            ground control studies.
                                         </li>
                                         <li>
-                                            Used Python, R, and SQL to analyze
-                                            data about different plant genomes
-                                            on Purdue's “Anvil” computing
-                                            cluster
+                                            Presented changes in expression of
+                                            proteins coded for by genes in
+                                            different plant pathways using the
+                                            KEGG database
+                                        </li>
+                                        <li>
+                                            Mapped changes in gene expression
+                                            for genes related to
+                                            photorespiration to gene locations
+                                            with AraCyc and SUBA 5
                                         </li>
                                     </ul>
                                 </Experience>,
@@ -111,22 +146,20 @@ const Home = () => {
                                 >
                                     <ul>
                                         <li>
-                                            Worked in a team of 40 to build an
-                                            underwater vehicle to complete for
-                                            the MATE International ROV
-                                            Competition
+                                            Created detection algorithms
+                                            identifying pieces of underwater
+                                            structures independent of background
                                         </li>
                                         <li>
-                                            Used Computer Stereo Vision to
-                                            create a 3D depth map to better
-                                            understand robot pose using digital
-                                            images
+                                            Wrote program to aspect ratio of
+                                            rectangular surface in real world
+                                            from irregular quadrangle identified
+                                            in image
                                         </li>
                                         <li>
-                                            Created 3d models of underwater
-                                            environments using depth maps
-                                            looking at the environment from
-                                            different angles
+                                            Developed opencv program for
+                                            measuring side lengths of rectangles
+                                            of known width to 0.04 m accuracy
                                         </li>
                                         <li>
                                             Worked with ROS to communicate

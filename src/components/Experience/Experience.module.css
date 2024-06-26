@@ -1,46 +1,62 @@
-.squareImage {
-    width: 50px; /* Set your desired width */
-    height: 50px; /* Set your desired height */
+.experienceCard {
+    background-color: #ffffff;
+    border-radius: 12px;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 0.25rem 0;
+}
+
+.role {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+    margin: 0;
+}
+
+.imageContainer {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-left: 1rem;
 }
 
 .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire square container */
+    border-radius: 50%;
 }
 
-.hstack {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
+.description {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
 }
 
-.pane {
-    border-style: solid;
-    border-color: rgb(78, 78, 79);
-    border-width: 0.075rem;
-    padding: 1rem 1rem 1rem 1rem;
-    width: 25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 1rem;
-    height: 28rem;
-}
-
-.desc {
-    display: inline;
-    margin: 1rem;
-}
-
-@media (max-width: 600px) {
-    .pane {
-        width: 70vw;
-    }
-    .squareImage {
-        width: 90%;
+@media (max-width: 768px) {
+    .experienceCard {
+        max-width: 100%;
     }
 }

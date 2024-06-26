@@ -11,27 +11,25 @@ interface ExperienceProps {
 
 const Experience: FC<ExperienceProps> = ({ name, role, image, children }) => {
     return (
-        <div className={styles.pane}>
-            <div className={styles.hstack}>
-                <div>
-                    <h4>{name}</h4>
-                    <i>
-                        <p>{role}</p>
-                    </i>
+        <div className={styles.experienceCard}>
+            <div className={styles.header}>
+                <div className={styles.info}>
+                    <h3 className={styles.name}>{name}</h3>
+                    <p className={styles.role}>{role}</p>
                 </div>
                 {image && (
-                    <div className={styles.squareImage}>
+                    <div className={styles.imageContainer}>
                         <Image
                             src={image}
                             alt={name}
+                            layout="fill"
+                            objectFit="cover"
                             className={styles.image}
-                            width={100}
-                            height={100}
                         />
                     </div>
                 )}
             </div>
-            <div className={styles.desc}>{children}</div>
+            <div className={styles.description}>{children}</div>
         </div>
     );
 };

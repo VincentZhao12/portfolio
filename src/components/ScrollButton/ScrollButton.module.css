@@ -1,6 +1,6 @@
-/* .button :hover {
-    cursor: zoom-in;
-} */
+.button:hover {
+    /* background-color: red; */
+}
 
 .button {
     background-color: inherit;
