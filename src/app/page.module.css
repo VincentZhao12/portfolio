@@ -27,7 +27,7 @@
 }
 
 .content > * {
-    margin-bottom: 5rem;
+    margin-top: 2rem;
     width: calc(100vw - 11rem);
 }
 
