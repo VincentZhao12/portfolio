@@ -398,7 +398,6 @@ const Home = () => {
                     <a
                         href="https://github.com/VincentZhao12"
                         target="_blank"
-                        rel="noopener noreferrer"
                         className={styles.iconLink}
                     >
                         <FaGithub /> GitHub
