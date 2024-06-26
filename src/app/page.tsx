@@ -389,7 +389,10 @@ const Home = () => {
             </div>
             <div className={styles.footer} ref={contactRef}>
                 <div className={styles.contact}>
-                    <a href="zhao1322@purdue.edu" className={styles.iconLink}>
+                    <a
+                        href="mailto:zhao1322@purdue.edu"
+                        className={styles.iconLink}
+                    >
                         <FaEnvelope /> Email
                     </a>
                     <a
