@@ -284,7 +284,7 @@ const Home = () => {
                                     name="Emotional Oranges"
                                     image="/images/emotional.png"
                                     github="https://github.com/VincentZhao12/emotional-oranges"
-                                    website="https://emotional-orangesweb.app"
+                                    website="https://the-emotional-oranges.web.app/"
                                     desc="ML Spotify API Hackathon Project"
                                     skills={[
                                         { name: 'TypeScript', icon: '📄' },
