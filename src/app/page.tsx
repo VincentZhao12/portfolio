@@ -83,9 +83,36 @@ const Home = () => {
                         <Carousel
                             items={[
                                 <Experience
+                                    name="New EIC"
+                                    role="Software Engineer Intern"
+                                    image="/images/neweic.png"
+                                    link="https://www.neweicgroup.com/"
+                                >
+                                    <ul>
+                                        <li>
+                                            Developed JWT authentication
+                                            workflow for internal training
+                                            application with ExpressJS and React
+                                            Native.
+                                        </li>
+                                        <li>
+                                            Implemented multilingual support
+                                            using i18next, including developing
+                                            scripts to scan for and translate
+                                            all text elements.
+                                        </li>
+                                        <li>
+                                            Created frontend for screens from
+                                            Figma designs with calls to MongoDB
+                                            server for data to hydrate screens.
+                                        </li>
+                                    </ul>
+                                </Experience>,
+                                <Experience
                                     name="Office of Indiana State Chemist"
                                     role="Software Engineer"
                                     image="/images/oisc.jpeg"
+                                    link="https://oisc.purdue.edu/"
                                 >
                                     <ul>
                                         <li>
@@ -117,6 +144,7 @@ const Home = () => {
                                     name="Purdue Data Mine Space Biology Research"
                                     role="Researcher"
                                     image="/images/datamine.png"
+                                    link="https://genelab.nasa.gov/"
                                 >
                                     <ul>
                                         <li>
@@ -143,6 +171,7 @@ const Home = () => {
                                     name="Purdue IEEE ROV Team"
                                     role="Computer Vision Engineer"
                                     image="/images/rov.png"
+                                    link="https://www.purdueieee.org/rov"
                                 >
                                     <ul>
                                         <li>
@@ -173,6 +202,7 @@ const Home = () => {
                                     name="Amazon AWS Open Search"
                                     role="Open Source Contributor"
                                     image="/images/osci.jpeg"
+                                    link="https://github.com/opensearch-project"
                                 >
                                     <ul>
                                         <li>
@@ -197,6 +227,7 @@ const Home = () => {
                                     name="Monta Vista Robotics Team"
                                     role="Director of Software"
                                     image="/images/mvrt.jpeg"
+                                    link="https://mvrt.com/"
                                 >
                                     <ul>
                                         <li>
@@ -264,22 +295,22 @@ const Home = () => {
                                         },
                                     ]}
                                 />,
-                                <Project
-                                    name="Monkey King Scavenger Hunt"
-                                    image="/images/mk.png"
-                                    github="https://github.com/VincentZhao12/monkey-king-scavenger-hunt"
-                                    website="https://monkey-king-scavenger.web.app/"
-                                    desc="ML scavenger hunt game for SCLA Creative Project"
-                                    skills={[
-                                        { name: 'TypeScript', icon: '📄' },
-                                        { name: 'ReactJS', icon: <FaReact /> },
-                                        {
-                                            name: 'Tensorflow',
-                                            icon: <SiTensorflow />,
-                                        },
-                                        { name: 'Python', icon: <FaPython /> },
-                                    ]}
-                                />,
+                                // <Project
+                                //     name="Monkey King Scavenger Hunt"
+                                //     image="/images/mk.png"
+                                //     github="https://github.com/VincentZhao12/monkey-king-scavenger-hunt"
+                                //     website="https://monkey-king-scavenger.web.app/"
+                                //     desc="ML scavenger hunt game for SCLA Creative Project"
+                                //     skills={[
+                                //         { name: 'TypeScript', icon: '📄' },
+                                //         { name: 'ReactJS', icon: <FaReact /> },
+                                //         {
+                                //             name: 'Tensorflow',
+                                //             icon: <SiTensorflow />,
+                                //         },
+                                //         { name: 'Python', icon: <FaPython /> },
+                                //     ]}
+                                // />,
                                 <Project
                                     name="Emotional Oranges"
                                     image="/images/emotional.png"
