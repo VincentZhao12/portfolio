@@ -281,6 +281,7 @@ const Home = () => {
                                 <Project
                                     name="Jakarta"
                                     image="/images/jakarta.png"
+                                    website="https://jakarta-web-ulbb7rudkq-uc.a.run.app/"
                                     github="https://github.com/VincentZhao12/crossword-bank"
                                     desc="Semantically searchable crossword clue banks with custom authentication"
                                     skills={[
