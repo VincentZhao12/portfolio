@@ -17,9 +17,17 @@ import {
     FaPython,
     FaReact,
 } from 'react-icons/fa';
-import { SiFirebase, SiOpencv, SiSpotify, SiTensorflow } from 'react-icons/si';
+import {
+    SiFirebase,
+    SiFlask,
+    SiJsonwebtokens,
+    SiOpencv,
+    SiSpotify,
+    SiTensorflow,
+} from 'react-icons/si';
 import { LuSoup } from 'react-icons/lu';
 import { TbTransform } from 'react-icons/tb';
+import { BiLogoPostgresql } from 'react-icons/bi';
 
 const Home = () => {
     const aboutRef = useRef<HTMLDivElement>(null);
@@ -270,6 +278,32 @@ const Home = () => {
                         <h2>Projects</h2>
                         <Carousel
                             items={[
+                                <Project
+                                    name="Jakarta"
+                                    image="/images/jakarta.png"
+                                    github="https://github.com/VincentZhao12/crossword-bank"
+                                    desc="Semantically searchable crossword clue banks with custom authentication"
+                                    skills={[
+                                        { name: 'Python', icon: <FaPython /> },
+                                        {
+                                            name: 'Flask',
+                                            icon: <SiFlask />,
+                                        },
+                                        {
+                                            name: 'Word Embeddings',
+                                            icon: <TbTransform />,
+                                        },
+                                        {
+                                            name: 'JWT',
+                                            icon: <SiJsonwebtokens />,
+                                        },
+                                        {
+                                            name: 'PostgreSQL',
+                                            icon: <BiLogoPostgresql />,
+                                        },
+                                        { name: 'ReactJS', icon: <FaReact /> },
+                                    ]}
+                                />,
                                 <Project
                                     name="NY Times Crossed"
                                     image="/images/crossed.png"
