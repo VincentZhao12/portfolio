@@ -91,28 +91,35 @@ const Home = () => {
                         <Carousel
                             items={[
                                 <Experience
-                                    name="New EIC"
-                                    role="Software Engineer Intern"
-                                    image="/images/neweic.png"
-                                    link="https://www.neweicgroup.com/"
+                                    name="Purdue AI for Musicians Research Group"
+                                    role="Undergraduate Researcher"
+                                    image="/images/aim.png"
+                                    link="https://ai4musicians.org/"
                                 >
                                     <ul>
                                         <li>
-                                            Developed JWT authentication
-                                            workflow for internal training
-                                            application with ExpressJS and React
-                                            Native.
+                                            Developed backend scripts for Purdue
+                                            AIM music transcription competition,
+                                            automating project queueing and job
+                                            scheduling.
                                         </li>
                                         <li>
-                                            Implemented multilingual support
-                                            using i18next, including developing
-                                            scripts to scan for and translate
-                                            all text elements.
+                                            Implemented cloning, SCP transfer,
+                                            and job queueing on Purdue's
+                                            Gilbreth GPU cluster for streamlined
+                                            processing.
                                         </li>
                                         <li>
-                                            Created frontend for screens from
-                                            Figma designs with calls to MongoDB
-                                            server for data to hydrate screens.
+                                            Created scoring and cleanup scripts
+                                            for transcription model submission
+                                            workflows, converting audio into
+                                            MIDI and grading the result.
+                                        </li>
+                                        <li>
+                                            Utilized SLURM job scheduling with
+                                            sbatch to ensure dependency-driven
+                                            script execution and resource
+                                            optimization.
                                         </li>
                                     </ul>
                                 </Experience>,
@@ -148,6 +155,33 @@ const Home = () => {
                                         </li>
                                     </ul>
                                 </Experience>,
+                                <Experience
+                                    name="New EIC"
+                                    role="Software Engineer Intern"
+                                    image="/images/neweic.png"
+                                    link="https://www.neweicgroup.com/"
+                                >
+                                    <ul>
+                                        <li>
+                                            Developed JWT authentication
+                                            workflow for internal training
+                                            application with ExpressJS and React
+                                            Native.
+                                        </li>
+                                        <li>
+                                            Implemented multilingual support
+                                            using i18next, including developing
+                                            scripts to scan for and translate
+                                            all text elements.
+                                        </li>
+                                        <li>
+                                            Created frontend for screens from
+                                            Figma designs with calls to MongoDB
+                                            server for data to hydrate screens.
+                                        </li>
+                                    </ul>
+                                </Experience>,
+
                                 <Experience
                                     name="Purdue Data Mine Space Biology Research"
                                     role="Researcher"
